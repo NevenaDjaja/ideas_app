@@ -1,0 +1,66 @@
+@import "bootstrap";
+
+.container-fluid {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	/* navigation */
+
+	.navbar {
+		background-color: #372F2F;
+		border: none;
+		
+		.nav>li>a {
+			color: #F5F5F5;
+		}
+		.logo {
+			font-weight: 500;
+			letter-spacing: 2px;
+		}
+	}
+
+	/* sign up form */
+	.welcome-wrapper {
+	height: 500px;
+	position:relative;
+
+		.welcome-header {
+			color: #fff;
+			text-align: center;
+			padding-top: 130px;
+			font-size: 1.4em;
+			position: relative;
+			z-index: 10;
+		}
+		.signup-form {
+			margin: 32px auto;
+			max-width: 380px;
+
+			.submit-btn {
+				padding: 16px;
+		    background-color: #5792C4;
+		    width: 200px;
+		    color: #fff;
+		    font-weight: 600;
+		    font-size: 18px;
+			}
+		}
+	}
+
+	.welcome-wrapper:before {
+		content: ' ';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		opacity: 0.8;
+		background-image: url('welcome_photo1.jpeg');
+		background-repeat: no-repeat;
+		-ms-background-size: cover;
+  	-o-background-size: cover;
+  	-moz-background-size: cover;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+	}
+}

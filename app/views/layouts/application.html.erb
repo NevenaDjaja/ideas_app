@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IdeasApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container-fluid"> 
+		<div class="main-wrapper">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<ul class="nav navbar-nav">
+          <li><a class="logo" href="#">IDEAHUB</a></li>
+<!--           <li><a href="#">Sign up</a></li>
+ -->        </ul>
+			</nav>
+			<%= yield %>
+
+		</div>
+</div>
+
+
+</body>
+</html>
