@@ -9,7 +9,6 @@ $ ->
 
   $('[data-js=get-started]').on 'click', (e) ->
     e.preventDefault()
-    # $('#main').empty().append(start_html)
     $('.get-started').hide()
     $('.remind-view').show()
 
@@ -17,8 +16,8 @@ $ ->
     e.preventDefault()
     $('.remind-view').hide()
     $('.get-started').show()
-    # $('#main').empty().append(welcome_html)
 
   $('[data-js=submit-email]').on 'click', (e) ->
+    alert("Work in progress Cobles! :)")
     return false
 
