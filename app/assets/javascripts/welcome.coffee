@@ -1,3 +1,13 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+	console.log "READY"
+
+	$('[data-js=get-started]').on 'click', (e) ->
+		e.preventDefault()
+		window.location.href = "/start"
+
+	$('[data-js=logo]').on 'click', (e) ->
+		e.preventDefault()
+		window.location.href = "/"
+
+
+	
