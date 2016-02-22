@@ -46,7 +46,10 @@
 		  	box-shadow: 2px 2px 2px #777;
 		  	text-shadow: 1px 1px 1px #777;
 		    font-size: 1em;
-		    margin-left: 12px;
+			}
+			#email-input {
+				max-width: 250px;
+				margin-right: 12px;
 			}
 		}
 	}
