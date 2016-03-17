@@ -29,18 +29,18 @@
     </div> <!-- get started view -->
 
     <!-- page 2 view -->
-    <div class="remind-view" style="display:none;">
+    <div class="remind-view" style="display:none; margin-left: 120px;">
       <h1>We are almost ready!</h1>
-      <p style="max-width: 500px;">We're very excited for you to get started sharing your ideas and
-   connecting with people, but we're not quite ready yet. Add your email
-   below if you would like us to remind you when we're all set. 
+      <p style="max-width: 500px;">
+        We're very excited for you to get started sharing your ideas and connecting with people, but we're not quite ready yet. Add your email below if you would like us to remind you when we're all set. 
       </p>
-      <form class="signup-form form-inline">
+
+      <%= form_tag("/email", class: "signup-form form-inline") do %>
         <div class="form-group">
-          <input type="text" class="form-control" id="email-input" placeholder="Your email" style="font-size:16px;">
+          <%= email_field_tag 'email', '', class: "form-control", placeholder: 'Your email', autofocus: true %>
         </div>
-        <button href="" class="btn submit-btn" type="submit" data-js="submit-email">Remind me</button>
-      </form>   
+        <%= submit_tag("Remind me",{class: "btn submit-btn"}) %>
+      <% end %>
     </div>  
   </div> <!-- /.welcome-header -->
 </div> <!-- /.welcome-wrapper -->
